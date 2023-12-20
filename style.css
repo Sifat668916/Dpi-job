@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#header{
+    background: black;
+    /* display: flex; */
+    justify-content: center;
+}
+.logo{
+    padding: 50px;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    gap: 20px;
+}
+.logo-top{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+h3.navbar-brand{
+    color: white;
+}
+#departments{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.departmentsall{
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 10px;
+    row-gap: 50px;
+    
+}
+.card-img-top{
+    width: 286px;
+    height: 161px;
+}
+.card{
+    position: relative;
+}
+.icon{
+    position: absolute;
+    top: 5px;
+    left: 30px;
+}
+.cardall .card-title{
+   text-align: right;
+}
+.cardall{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 50px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+.clndr{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+.calander{
+    text-align: center;
+    width: 75%;
+    border: none;
+    padding:5px;
+    margin-bottom: 30px;
+    color: white;
+    border-radius: 15px;
+    background-color: darkorange;
+}
+.col-md-4 .img-fluid{
+    width: 179px;
+    height: 119px;
+}
+.hlt{
+    color: gray;
+    display: flex;
+    justify-content: center;align-items: center;
+}
+.highlgt{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+}
+.l-row{
+    display: flex;
+    justify-content: space-between;
+}
+.p-top-link__list dt{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+footer{
+    margin-top: 50px;
+    padding-top: 50px;
+    background-color: black;
+    color: white;
+}
+.logo-btm-mn{
+    display: flex;
+}
+.logo-btm{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+.code-end{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.coderight h5{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 300px) {
+    .logo{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .departmentsall{
+        margin-left: 0px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        column-gap: 10px;
+        
+    }
+    .cardall{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 0px;
+        margin-left: 0px;
+
+    }
+    .code-end{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .l-row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .highlgt{
+        /* margin-top: 30px;
+        margin-bottom: 50px; */
+        text-align: center;
+        display: grid;
+        grid-template-columns:repeat(1,1fr) ;
+    }
+    .clndr{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        margin-left: 0px;
+    }
+    
+} 
