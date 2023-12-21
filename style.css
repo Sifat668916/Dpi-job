@@ -23,11 +23,18 @@
 h3.navbar-brand{
     color: white;
 }
-#departments{
-    display: flex;
-    align-items: center;
-    text-align: center;
+.mark{
+    background: darkorange;
 }
+.dep-head{
+    text-align: center;
+    
+}
+/* #departments{
+    background-image: url(images/OCP-Summit.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+} */
 .departmentsall{
     margin-left: 50px;
     display: grid;
@@ -42,14 +49,25 @@ h3.navbar-brand{
 }
 .card{
     position: relative;
+    box-shadow: rgba(212, 21, 14, 0.35) 0px 5px 15px;
+    transition: 3s all ease;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: 3s all ease;
 }
 .icon{
     position: absolute;
-    top: 5px;
-    left: 30px;
+    top: 30px;
+    left: 40px;
+}
+.btn{
+    color: white;
 }
 .cardall .card-title{
-   text-align: right;
+    padding-top: 50px;
+    padding-bottom: 20px;
+   text-align: left;
 }
 .cardall{
     display: grid;
@@ -84,11 +102,13 @@ h3.navbar-brand{
     justify-content: center;align-items: center;
 }
 .highlgt{
+    /* margin-left: 50px; */
     margin-top: 30px;
     margin-bottom: 50px;
     text-align: center;
     display: grid;
     grid-template-columns:repeat(2,1fr) ;
+    gap: ;
 }
 .l-row{
     display: flex;
@@ -132,16 +152,20 @@ footer{
     }
     .departmentsall{
         margin-left: 0px;
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         column-gap: 10px;
-        
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
     }
     .cardall{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        row-gap: 0px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin-left: 0px;
+        row-gap: 20px;
 
     }
     .code-end{
@@ -168,6 +192,10 @@ footer{
         justify-content: center;
         margin-bottom: 30px;
         margin-left: 0px;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
     }
     
 } 
